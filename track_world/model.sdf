@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="track_world">
+    <static>true</static>
+    <link name="track_world">
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <collision name="track_world">
+        <geometry>
+          <mesh>
+            <uri>model://track_world/meshes/track.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="track_world">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://track_world/meshes/track.dae</uri>
+            <scale>2 1.5 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://track_world/meshes/track.dae</uri>
+            <name>Traffic lisht</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
